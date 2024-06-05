@@ -10,6 +10,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
 
 @Configuration
 @Profile("dev")
@@ -25,6 +26,7 @@ public class DataBaseSeeder implements CommandLineRunner {
         private UsuarioRepository usuarioRepository;
 
         @Override
+        @Transactional
         public void run(String... args) throws Exception {
                 // Criando e salvando o usuário
                 Usuario usuario = Usuario.builder()

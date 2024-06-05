@@ -8,8 +8,12 @@ import jakarta.persistence.Id;
 import jakarta.persistence.OneToOne;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
+@Data
+@NoArgsConstructor
 public class Cadastrar {
 
     @Id
@@ -43,5 +47,4 @@ public class Cadastrar {
 
     @OneToOne(cascade = CascadeType.ALL)
     private Usuario usuario;
-
 }

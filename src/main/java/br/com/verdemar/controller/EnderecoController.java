@@ -2,17 +2,8 @@ package br.com.verdemar.controller;
 
 import static org.springframework.http.HttpStatus.*;
 
-import br.com.verdemar.assembler.CadastrarModelAssembler;
-import br.com.verdemar.assembler.ContatoModelAssembler;
-import br.com.verdemar.assembler.DocumentosModelAssembler;
 import br.com.verdemar.assembler.EnderecoModelAssembler;
-import br.com.verdemar.model.Cadastrar;
-import br.com.verdemar.model.Contato;
-import br.com.verdemar.model.Documentos;
 import br.com.verdemar.model.Endereco;
-import br.com.verdemar.repository.CadastrarRepository;
-import br.com.verdemar.repository.ContatoRepository;
-import br.com.verdemar.repository.DocumentosRepository;
 import br.com.verdemar.repository.EnderecoRepository;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;

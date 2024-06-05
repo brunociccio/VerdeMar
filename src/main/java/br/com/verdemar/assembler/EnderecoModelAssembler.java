@@ -5,9 +5,7 @@ import org.springframework.hateoas.server.RepresentationModelAssembler;
 import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
 import org.springframework.stereotype.Component;
 
-import br.com.verdemar.controller.ContatoController;
 import br.com.verdemar.controller.EnderecoController;
-import br.com.verdemar.model.Contato;
 import br.com.verdemar.model.Endereco;
 
 @Component

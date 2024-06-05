@@ -18,9 +18,9 @@ public class SwaggerConfig {
                         .info(new Info()
                                 .title("VerdeMar API")
                                 .version("1.0.0")
-                                .description("API do app VerdeMar")
+                                .description("API do app VerdeMar - Economia Azul: projeto desenvolvido para a Global Solution que aborda a sustentabilidade e preservação dos Oceanos")
                                 .contact(new Contact()
-                                        .name("Bruno Ciccio")
+                                        .name("Bruno Ciccio - Desenvolvedor Full Stack")
                                         .email("dev.bruno.ciccio@gmail.com"))
                                 .license(new License().name("Apache 2.0").url("http://springdoc.org")));
         }

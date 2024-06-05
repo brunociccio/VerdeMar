@@ -12,24 +12,26 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class SwaggerConfig {
 
-    @Bean
-    public OpenAPI customOpenAPI() {
-        return new OpenAPI()
-                .info(new Info()
-                        .title("VerdeMar API")
-                        .version("1.0.0")
-                        .description("API do app VerdeMar")
-                        .contact(new Contact()
-                                .name("Bruno Ciccio")
-                                .email("dev.bruno.ciccio@gmail.com"))
-                        .license(new License().name("Apache 2.0").url("http://springdoc.org")));
-    }
+        @Bean
+        public OpenAPI customOpenAPI() {
+                return new OpenAPI()
+                        .info(new Info()
+                                .title("VerdeMar API")
+                                .version("1.0.0")
+                                .description("API do app VerdeMar")
+                                .contact(new Contact()
+                                        .name("Bruno Ciccio")
+                                        .email("dev.bruno.ciccio@gmail.com"))
+                                .license(new License().name("Apache 2.0").url("http://springdoc.org")));
+        }
 
-    @Bean
-    public GroupedOpenApi publicApi() {
-        return GroupedOpenApi.builder()
-                .group("public")
-                .pathsToMatch("/cadastrar/**", "/cadastrarCnpj/**")
-                .build();
-    }
+        @Bean
+        public GroupedOpenApi publicApi() {
+                return GroupedOpenApi.builder()
+                        .group("public")
+                        .pathsToMatch("/cadastrar/**", "/cadastrarCnpj/**", "/contato/**", "/documentos/**", "/endereco/**",
+                        "/esqueciSenha/**", "/eventos/**", "/localizacao/**", "/login/**", "/loginApple/**", "/loginGoogle/**",
+                        "/pontoColeta/**", "/relatorio/**", "/usuario/**")
+                        .build();
+        }
 }

@@ -16,7 +16,7 @@ import io.swagger.v3.oas.annotations.info.Info;
 		info = @Info(
 		title = "VerdeMar API",
 		version = "1.0.0",
-		description = "API do app VerdeMar",
+		description = "API do app VerdeMar - Economia Azul: projeto desenvolvido para a Global Solution que aborda a sustentabilidade e preservação dos Oceanos",
 		contact = @Contact(name = "Bruno Ciccio", email = "dev.bruno.ciccio@gmail.com")
 	)
 )

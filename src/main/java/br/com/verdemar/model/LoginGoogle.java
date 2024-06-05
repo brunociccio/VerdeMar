@@ -1,20 +1,23 @@
 package br.com.verdemar.model;
 
-import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotBlank;
 
 @Entity
 public class LoginGoogle {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false, unique = true)
+    @NotBlank(message = "Google ID é obrigatório")
     private String googleId;
 
-    @Column(nullable = false)
+    @NotBlank(message = "Token é obrigatório")
     private String token;
+
 }
+

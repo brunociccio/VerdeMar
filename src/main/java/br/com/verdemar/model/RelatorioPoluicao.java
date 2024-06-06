@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
 
 @Data
-@Entity
+@Entity(name = "TB_VMAR_RELATORIO_POLUICAO")
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor

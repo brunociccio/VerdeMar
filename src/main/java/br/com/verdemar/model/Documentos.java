@@ -11,7 +11,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@Entity(name = "TB_DOCUMENTOS")
+@Entity(name = "TB_VMAR_DOCUMENTOS")
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor

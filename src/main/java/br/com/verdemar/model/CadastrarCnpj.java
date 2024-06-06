@@ -11,7 +11,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@Entity
+@Entity(name = "TB_VMAR_CADASTRAR_CNPJ")
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor

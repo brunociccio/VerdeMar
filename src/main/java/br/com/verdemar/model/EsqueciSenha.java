@@ -12,7 +12,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@Entity
+@Entity(name = "TB_VMAR_ESQUECI_SENHA")
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor

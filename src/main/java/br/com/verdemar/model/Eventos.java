@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @Data
-@Entity
+@Entity(name = "TB_VMAR_EVENTOS")
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor

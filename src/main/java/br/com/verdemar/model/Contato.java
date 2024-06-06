@@ -10,7 +10,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 @Data
-@Entity
+@Entity(name = "TB_VMAR_CONTATO")
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor

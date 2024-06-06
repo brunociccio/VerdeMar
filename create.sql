@@ -14,7 +14,8 @@ create table tb_vmar_ponto_coleta (id number(19,0) generated as identity, contat
 create table tb_vmar_relatorio_poluicao (criado_em timestamp(6), id number(19,0) generated as identity, localizacao_id number(19,0) unique, tipo_poluicao varchar2(255 char), primary key (id));
 create table tb_vmar_usuario (id number(19,0) generated as identity, nome_completo varchar2(255 char), primary key (id));
 alter table tb_vmar_cadastrar add constraint FK29xfqxims9ncaef3x93x6g6to foreign key (documentos_id) references tb_vmar_documentos;
-alter table tb_vmar_cadastrar add constraint FKcifoax19ont7gac54vwa3eyq0 foreign key (usuario_id) references tb_vmar_usuario;
+alter table tb_vmar_cadastrar add constraint FKcifoax19ont7gac54vwa3eyq0 foreign key (usuario_id) references tb_v
+mar_usuario;
 alter table tb_vmar_eventos add constraint FKs6mmbq48q1mi7ak1gexopaakd foreign key (localizacao_id) references tb_vmar_localizacao;
 alter table tb_vmar_eventos add constraint FKej5rv5cb0e83f54dxmhp829mo foreign key (organizador_id) references tb_vmar_usuario;
 alter table tb_vmar_eventos add constraint FKpo9ghujurvwjw9r97vbs5eke5 foreign key (ponto_coleta_id) references tb_vmar_ponto_coleta;

@@ -26,9 +26,6 @@ Esse arquivo README contem documentação específica para duas entregas de disc
 3. O console de adm está no repositório do GitHub: [JAVA]
 https://github.com/brunociccio/ADM-Java-Spring.git
 spring.boot.admin.client.url=http://localhost:9090 [não é um requisito necessário, porém, caso queiram acessar, as credenciais estão no arquivo application.properties
-- spring.security.user.name=devbrunociccio
-- spring.security.user.password=@Oliveira052020
-]
 
 4. O deploy foi feito em nuvem no Railway, abaixo os links para acesso ao projeto: [JAVA]
 Home - https://verdemar-production.up.railway.app/home
